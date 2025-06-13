@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Student</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <section class="sectionEdit">
+    <h2>Edit Student</h2>
+
+    <form method="POST">
+      <label class="form-label">Name:</label>
+      <input class="form-control" type="text" name="name" value="{{ student['name'] }}"><br>
+
+      <label class="form-label">Grade:</label>
+      <input class="form-control" type="number" name="grade" value="{{ student['grade'] }}"><br>
+
+      <label class="form-label">Class:</label>
+      <select name="class_id" class="form-control">
+        <option value="1" {% if student['class_id'] == 1 %}selected{% endif %}>Math</option>
+        <option value="2" {% if student['class_id'] == 2 %}selected{% endif %}>Science</option>
+        <option value="3" {% if student['class_id'] == 3 %}selected{% endif %}>History</option>
+        <option value="4" {% if student['class_id'] == 4 %}selected{% endif %}>English</option>
+        <!-- Add more classes here if needed -->
+      </select><br>
+
+      <button type="submit">Save Changes</button>
+    </form>
+
+    <br>
+    <a href="{{ url_for('index') }}" class="button">Back to Home</a>
+  </section>
+</body>
+</html>

@@ -1,0 +1,172 @@
+*, html, body {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-toolbar .btn {
+  padding: 8px 14px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+header, nav, section, footer {
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 800px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  color: #2c3e50;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  border-radius: 50%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: #2980b9;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+/* Additional Useful Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, button {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #2c3e50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1a252f;
+}
+
+/* Enhanced Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+thead {
+  background-color: #2c3e50;
+  color: #ffffff;
+}
+
+th {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Alternating row colors */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+td a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+.filter-toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  gap: 10px;
+}
+
+.filter-toolbar li a.button {
+  display: inline-block;
+  padding: 8px 14px;
+  background-color: #2c3e50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.filter-toolbar li a.button:hover {
+  background-color: #1a252f;
+}
+
+.filter-toolbar form select {
+  padding: 6px 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sectionEdit {
+  margin-left: 30%;
+  margin-right: 30%;
+}
